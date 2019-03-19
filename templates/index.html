@@ -1,0 +1,1177 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	<div id="container" class="effect mainnav-lg navbar-fixed">
+
+		<!--NAVBAR-->
+		<!--===================================================-->
+		<header id="navbar">
+			<div id="navbar-container" class="boxed">
+
+				<!--Brand logo & name-->
+				<!--================================-->
+				<div class="navbar-header">
+					<a href="/" class="navbar-brand">
+						<img src="/static/imgs/logo.png" alt="Nifty Logo" class="brand-icon">
+						<div class="brand-title">
+							<span class="brand-text">CrazyEye</span>
+						</div>
+					</a>
+				</div>
+				<!--================================-->
+				<!--End brand logo & name-->
+
+
+				<!--Navbar Dropdown-->
+				<!--================================-->
+				<div class="navbar-content clearfix">
+					<ul class="nav navbar-top-links pull-left">
+
+						<!--Navigation toogle button-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="tgl-menu-btn">
+							<a class="mainnav-toggle" href="#">
+								<i class="fa fa-navicon fa-lg"></i>
+							</a>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End Navigation toogle button-->
+
+
+						<!--Messages Dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+								<i class="fa fa-envelope fa-lg"></i>
+								<span class="badge badge-header badge-warning">9</span>
+							</a>
+
+							<!--Message dropdown menu-->
+							<div class="dropdown-menu dropdown-menu-md with-arrow">
+								<div class="pad-all bord-btm">
+									<p class="text-lg text-muted text-thin mar-no">You have 3 messages.</p>
+								</div>
+								<div class="nano scrollable">
+									<div class="nano-content">
+										<ul class="head-list">
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<img src="/static/imgs/av2.png" alt="Profile Picture" class="img-circle img-sm">
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Andy sent you a message</div>
+														<small class="text-muted">15 minutes ago</small>
+													</div>
+												</a>
+											</li>
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<img src="/static/imgs/av4.png" alt="Profile Picture" class="img-circle img-sm">
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Lucy sent you a message</div>
+														<small class="text-muted">30 minutes ago</small>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<!--Dropdown footer-->
+								<div class="pad-all bord-top">
+									<a href="#" class="btn-link text-dark box-block">
+										<i class="fa fa-angle-right fa-lg pull-right"></i>Show All Messages
+									</a>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End message dropdown-->
+
+
+
+
+						<!--Notification dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+								<i class="fa fa-bell fa-lg"></i>
+								<span class="badge badge-header badge-danger">5</span>
+							</a>
+
+							<!--Notification dropdown menu-->
+							<div class="dropdown-menu dropdown-menu-md with-arrow">
+								<div class="pad-all bord-btm">
+									<p class="text-lg text-muted text-thin mar-no">You have 3 messages.</p>
+								</div>
+								<div class="nano scrollable">
+									<div class="nano-content">
+										<ul class="head-list">
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#">
+													<div class="clearfix">
+														<p class="pull-left">Progressbar</p>
+														<p class="pull-right">70%</p>
+													</div>
+													<div class="progress progress-sm">
+														<div style="width: 70%;" class="progress-bar">
+															<span class="sr-only">70% Complete</span>
+														</div>
+													</div>
+												</a>
+											</li>
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<span class="icon-wrap icon-circle bg-primary">
+															<i class="fa fa-comment fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Circle Icon</div>
+														<small class="text-muted">15 minutes ago</small>
+													</div>
+												</a>
+											</li>
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+											<span class="badge badge-success pull-right">90%</span>
+													<div class="media-left">
+														<span class="icon-wrap icon-circle bg-danger">
+															<i class="fa fa-hdd-o fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Circle icon with badge</div>
+														<small class="text-muted">50 minutes ago</small>
+													</div>
+												</a>
+											</li>
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<span class="icon-wrap bg-info">
+															<i class="fa fa-file-word-o fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Square Icon</div>
+														<small class="text-muted">Last Update 8 hours ago</small>
+													</div>
+												</a>
+											</li>
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+											<span class="label label-danger pull-right">New</span>
+													<div class="media-left">
+														<span class="icon-wrap bg-purple">
+															<i class="fa fa-comment fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Square icon with label</div>
+														<small class="text-muted">Last Update 8 hours ago</small>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<!--Dropdown footer-->
+								<div class="pad-all bord-top">
+									<a href="#" class="btn-link text-dark box-block">
+										<i class="fa fa-angle-right fa-lg pull-right"></i>Show All Notifications
+									</a>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End notifications dropdown-->
+
+
+
+						<!--Mega dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="mega-dropdown">
+							<a href="#" class="mega-dropdown-toggle">
+								<i class="fa fa-th-large fa-lg"></i>
+							</a>
+							<div class="dropdown-menu mega-dropdown-menu">
+								<div class="clearfix">
+									<div class="col-sm-12 col-md-3">
+
+										<!--Mega menu widget-->
+										<div class="text-center bg-purple pad-all">
+											<h3 class="text-thin mar-no">Weekend shopping</h3>
+											<div class="pad-ver box-inline">
+												<span class="icon-wrap icon-wrap-lg icon-circle bg-trans-light">
+													<i class="fa fa-shopping-cart fa-4x"></i>
+												</span>
+											</div>
+											<p class="pad-btm">
+												Members get <span class="text-lg text-bold">50%</span> more points. Lorem ipsum dolor sit amet!
+											</p>
+											<a href="#" class="btn btn-purple">Learn More...</a>
+										</div>
+
+									</div>
+									<div class="col-sm-4 col-md-3">
+
+										<!--Mega menu list-->
+										<ul class="list-unstyled">
+											<li class="dropdown-header">Pages</li>
+											<li><a href="#">Profile</a></li>
+											<li><a href="#">Search Result</a></li>
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">Sreen Lock</a></li>
+											<li><a href="#" class="disabled">Disabled</a></li>
+											<li class="divider"></li>
+											<li class="dropdown-header">Icons</li>
+											<li><a href="#"><span class="pull-right badge badge-purple">479</span> Font Awesome</a></li>
+											<li><a href="#">Skycons</a></li>
+										</ul>
+
+									</div>
+									<div class="col-sm-4 col-md-3">
+
+										<!--Mega menu list-->
+										<ul class="list-unstyled">
+											<li class="dropdown-header">Mailbox</li>
+											<li><a href="#"><span class="pull-right label label-danger">Hot</span>Indox</a></li>
+											<li><a href="#">Read Message</a></li>
+											<li><a href="#">Compose</a></li>
+											<li class="divider"></li>
+											<li class="dropdown-header">Featured</li>
+											<li><a href="#">Smart navigation</a></li>
+											<li><a href="#"><span class="pull-right badge badge-success">6</span>Exclusive plugins</a></li>
+											<li><a href="#">Lot of themes</a></li>
+											<li><a href="#">Transition effects</a></li>
+										</ul>
+
+									</div>
+									<div class="col-sm-4 col-md-3">
+
+										<!--Mega menu list-->
+										<ul class="list-unstyled">
+											<li class="dropdown-header">Components</li>
+											<li><a href="#">Tables</a></li>
+											<li><a href="#">Charts</a></li>
+											<li><a href="#">Forms</a></li>
+											<li class="divider"></li>
+											<li>
+												<form role="form" class="form">
+													<div class="form-group">
+														<label class="dropdown-header" for="demo-megamenu-input">Newsletter</label>
+														<input id="demo-megamenu-input" type="email" placeholder="Enter email" class="form-control">
+													</div>
+													<button class="btn btn-primary btn-block" type="submit">Submit</button>
+												</form>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End mega dropdown-->
+
+					</ul>
+					<ul class="nav navbar-top-links pull-right">
+
+						<!--Language selector-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="dropdown">
+							<a class="lang-selector dropdown-toggle" href="#" data-toggle="dropdown">
+								<span class="lang-selected">
+									<img class="lang-flag" src="/static/imgs/flags/united-kingdom.png" alt="English">
+									<span class="lang-id">EN</span>
+									<span class="lang-name">English</span>
+								</span>
+							</a>
+
+							<!--Language selector menu-->
+							<ul class="head-list dropdown-menu with-arrow">
+								<li>
+									<!--English-->
+									<a href="#" class="active">
+										<img class="lang-flag" src="/static/imgs/flags/united-kingdom.png" alt="English">
+										<span class="lang-id">EN</span>
+										<span class="lang-name">English</span>
+									</a>
+								</li>
+								<li>
+									<!--France-->
+									<a href="#">
+										<img class="lang-flag" src="/static/imgs/flags/france.png" alt="France">
+										<span class="lang-id">FR</span>
+										<span class="lang-name">Fran&ccedil;ais</span>
+									</a>
+								</li>
+								<li>
+									<!--Germany-->
+									<a href="#">
+										<img class="lang-flag" src="/static/imgs/flags/germany.png" alt="Germany">
+										<span class="lang-id">DE</span>
+										<span class="lang-name">Deutsch</span>
+									</a>
+								</li>
+								<li>
+									<!--Italy-->
+									<a href="#">
+										<img class="lang-flag" src="/static/imgs/flags/italy.png" alt="Italy">
+										<span class="lang-id">IT</span>
+										<span class="lang-name">Italiano</span>
+									</a>
+								</li>
+								<li>
+									<!--Spain-->
+									<a href="#">
+										<img class="lang-flag" src="/static/imgs/flags/spain.png" alt="Spain">
+										<span class="lang-id">ES</span>
+										<span class="lang-name">Espa&ntilde;ol</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End language selector-->
+
+
+
+						<!--User dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li id="dropdown-user" class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+								<span class="pull-right">
+									<img class="img-circle img-user media-object" src="/static/imgs/av1.png" alt="Profile Picture">
+								</span>
+								<div class="username hidden-xs">{{ request.user.name }}</div>
+							</a>
+
+
+							<div class="dropdown-menu dropdown-menu-md dropdown-menu-right with-arrow panel-default">
+
+								<!-- Dropdown heading  -->
+								<div class="pad-all bord-btm">
+									<p class="text-lg text-muted text-thin mar-btm">750Gb of 1,000Gb Used</p>
+									<div class="progress progress-sm">
+										<div class="progress-bar" style="width: 70%;">
+											<span class="sr-only">70%</span>
+										</div>
+									</div>
+								</div>
+
+
+								<!-- User dropdown menu -->
+								<ul class="head-list">
+									<li>
+										<a href="/personal/">
+											<i class="fa fa-user fa-fw fa-lg"></i> Profile
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="badge badge-danger pull-right">9</span>
+											<i class="fa fa-envelope fa-fw fa-lg"></i> Messages
+										</a>
+									</li>
+									<li>
+										<a href="/personal/">
+											<span class="label label-success pull-right">New</span>
+											<i class="fa fa-gear fa-fw fa-lg"></i> Settings
+										</a>
+									</li>
+								</ul>
+
+								<!-- Dropdown footer -->
+								<div class="pad-all text-right">
+									<a href="/logout/" class="btn btn-primary">
+										<i class="fa fa-sign-out fa-fw"></i> Logout
+									</a>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End user dropdown-->
+
+					</ul>
+				</div>
+				<!--================================-->
+				<!--End Navbar Dropdown-->
+
+			</div>
+		</header>
+		<!--===================================================-->
+		<!--END NAVBAR-->
+
+		<div class="boxed">
+
+			<!--CONTENT CONTAINER-->
+			<!--===================================================-->
+			<div id="content-container">
+
+				<!--Page Title-->
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<div id="page-title">
+					<h1 class="page-header text-overflow">{% block page-title %}堡垒机系统{% endblock %}</h1>
+
+					<!--Searchbox-->
+					<div class="searchbox">
+						<div class="input-group custom-search-form">
+							<input type="text" class="form-control" placeholder="Search..">
+							<span class="input-group-btn">
+								<button class="text-muted" type="button"><i class="fa fa-search"></i></button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<!--End page title-->
+
+
+				<!--Breadcrumb-->
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                {% block breadcrumb %}
+				<ol class="breadcrumb">
+					<li><a href="/">Home</a></li>
+					<li><a href="#">Library</a></li>
+					<li class="active">Data</li>
+				</ol>
+                {% endblock %}
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<!--End breadcrumb-->
+
+
+
+
+				<!--Page content-->
+				<!--===================================================-->
+	            <div id="page-content">
+                    {% block page-content %}
+                                        <div class="row"> <!--首页概览-->
+						<div class="col-sm-6 col-lg-3">
+
+							<!--Registered User-->
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<div class="panel media pad-all">
+								<div class="media-left">
+									<span class="icon-wrap icon-wrap-sm icon-circle bg-success">
+									<i class="fa fa-server fa-2x"></i>
+									</span>
+								</div>
+
+								<div class="media-body">
+									<p id="total_servers" class="text-2x mar-no text-thin"></p>
+									<p class="text-muted mar-no">已管理服务器</p>
+								</div>
+							</div>
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+						</div>
+						<div class="col-sm-6 col-lg-3">
+
+							<!--New Order-->
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<div class="panel media pad-all">
+								<div class="media-left">
+									<span class="icon-wrap icon-wrap-sm icon-circle bg-info">
+									<i class="fa fa-user fa-2x"></i>
+									</span>
+								</div>
+
+								<div class="media-body">
+									<p id="total_users" class="text-2x mar-no text-thin">0</p>
+									<p class="text-muted mar-no">注册用户数</p>
+								</div>
+							</div>
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+						</div>
+						<div class="col-sm-6 col-lg-3">
+
+							<!--Comments-->
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<div class="panel media pad-all">
+								<div class="media-left">
+									<span class="icon-wrap icon-wrap-sm icon-circle bg-warning">
+									<i class="fa fa-comment fa-2x"></i>
+									</span>
+								</div>
+
+								<div  class="media-body">
+									<p id="current_logging_users" style="cursor: pointer" onclick="ShowOnlineUsers()" class="text-2x btn-link  mar-no text-thin"></p>
+									<p class="text-muted mar-no">当前在线用户</p>
+								</div>
+							</div>
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+						</div>
+						<div class="col-sm-6 col-lg-3">
+
+							<!--Sales-->
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+							<div class="panel media pad-all">
+								<div class="media-left">
+									<span class="icon-wrap icon-wrap-sm icon-circle bg-danger">
+									<i class="fa fa-desktop fa-2x"></i>
+									</span>
+								</div>
+
+								<div class="media-body">
+									<p id="current_connected_hosts" style="cursor: pointer" onclick="ShowOnlineHosts()"  class="text-2x mar-no btn-link text-thin"></p>
+									<p class="text-muted mar-no">正在连接的主机数</p>
+								</div>
+							</div>
+							<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+						</div>
+					</div> <!--end首页概览-->
+
+                    <div class="row">
+                        <div class="col-lg-8">
+
+                            <div class="panel">
+                                <div class="panel-heading">
+									<!--div class="panel-control">
+										<button id="demo-panel-network-refresh" data-toggle="panel-overlay" data-target="#demo-panel-network" class="btn"><i class="fa fa-rotate-right"></i></button>
+										<div class="btn-group">
+											<button class="dropdown-toggle btn" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i></button>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#">Action</a></li>
+												<li><a href="#">Another action</a></li>
+												<li><a href="#">Something else here</a></li>
+												<li class="divider"></li>
+												<li><a href="#">Separated link</a></li>
+											</ul>
+										</div>
+									</div-->
+									<h3 class="panel-title">用户登录量统计</h3>
+								</div>
+                            <div id="chart-container" style="height: 300px; min-width: 310px;">
+
+
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+
+                            <div class="panel">
+                                <div class="panel-heading">
+
+									<h3 class="panel-title">最近活跃用户统计</h3>
+								</div>
+
+                                <div  class="panel-body" style="height: 300px">
+
+                                    <table class="table  table-condensed">
+											<thead>
+												<tr>
+													<th>用户</th>
+													<th>登录次数</th>
+													<th>操作命令数</th>
+												</tr>
+											</thead>
+											<tbody id="recent_active_users">
+
+											</tbody>
+									</table>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                         <div class="col-lg-12">
+
+                            <div class="panel">
+                                <div class="panel-heading">
+									<h3 class="panel-title">最近10条批量任务纪录</h3>
+								</div>
+                                <div class="table-responsive">
+								<table class="table table-striped">
+                                {% load custom_tag %}
+									<thead>
+										<tr>
+											<th class="text-center">任务ID</th>
+											<th class="text-center">日期</th>
+											<th>操作用户</th>
+											<th>操作主机数</th>
+											<th>操作类型</th>
+											<th>操作内容</th>
+											<th>成功数</th>
+											<th>失败数</th>
+											<th>未知数</th>
+										</tr>
+									</thead>
+									<tbody>
+
+									{% for task in recent_tasks %}
+                                    <tr>
+                                        <td><a class="btn-link" href="/configure/web_tasklogdetail/?child_of_task={{ task.id }}" target="_blank">#{{ task.id }}</a></td>
+                                        <td>{{ task.start_time }}</td>
+                                        <td>{{ task.user }}</td>
+                                         <td>{{ task.hosts.select_related.count }}</td>
+                                        <td>{{ task.get_task_type_display }}</td>
+
+                                        <td>{{ task.cmd }}</td>
+                                        <td>{% query_set task.tasklogdetail_set "result" "success" %}</td>
+                                        <td>{% query_set task.tasklogdetail_set "result" "failed" %}</td>
+                                        <td>{% query_set task.tasklogdetail_set "result" "unknown" %}</td>
+                                    </tr>
+                                    {% endfor %}
+									</tbody>
+								</table>
+							</div>
+
+                            </div>
+                        </div>
+                        <!--div class="col-lg-6">
+
+                            <div class="panel">
+                                <div class="panel-heading">
+
+									<h3 class="panel-title">近期危险操作统计</h3>
+								</div>
+
+                            </div>
+                        </div-->
+                    </div>
+                    {% endblock %}
+                </div>
+
+
+			</div>
+			<!--===================================================-->
+			<!--END CONTENT CONTAINER-->
+
+
+
+			<!--MAIN NAVIGATION-->
+			<!--===================================================-->
+			<nav id="mainnav-container">
+				<div id="mainnav">
+
+					<!--Menu-->
+					<!--================================-->
+					<div id="mainnav-menu-wrap">
+						<div class="nano">
+							<div class="nano-content">
+								<ul id="mainnav-menu" class="list-group">
+
+									<!--Category name-->
+
+									<!--Menu list item-->
+									<li class="">
+										<a href="/">
+											<i class="fa fa-plane"></i>
+											<span class="menu-title">首页</span>
+										</a>
+									</li>
+
+									<!--Menu list item-->
+									<li>
+										<a href="/hosts/?selected_group=-1">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">
+												<strong>主机</strong>
+											</span>
+										</a>
+									</li>
+
+									<!--Menu list item-->
+									<li>
+										<a href="/auditlog/?host_id=1">
+											<i class="fa fa-tag"></i>
+											<span class="menu-title">
+												操作记录
+												<span class="label label-success pull-right">New</span>
+											</span>
+										</a>
+                                        <ul class="collapse">
+											<li><a href="/user_audit/0/">按用户</a></li>
+											<li><a href="/auditlog/">按主机</a></li>
+											<!--li class="list-divider"></li>
+											<li><a href="#">Separate link</a></li-->
+
+										</ul>
+									</li>
+
+									<!--Menu list item-->
+
+									<li class="list-divider"></li>
+
+
+									<!--Menu list item-->
+									<li class="">
+										<a href="#">
+											<i class="fa fa-th"></i>
+											<span class="menu-title">批量管理</span>
+											<i class="arrow"></i>
+										</a>
+
+										<!--Submenu-->
+										<ul class="collapse">
+											<li><a href="{% url 'batch_cmd' %}">批量命令</a></li>
+											<li class=""><a href="{% url 'file_transfer' %}">批量文件传送</a></li>
+
+										</ul>
+									</li>
+
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-taxi"></i>
+											<span class="menu-title">
+												<strong>配置</strong>
+											</span>
+											<i class="arrow"></i>
+										</a>
+
+										<!--Submenu-->
+										<ul class="collapse">
+											<li><a href="/asset.html">host管理</a></li>
+											<li class="list-divider"></li>
+											<li><a href="/kingadmin/">KingAdmin后台管理</a></li>
+
+										</ul>
+									</li>
+
+									<!--Menu list item-->
+
+
+								</ul>
+
+
+								<!--Widget-->
+								<!--================================-->
+								<div class="mainnav-widget">
+
+									<!-- Show the button on collapsed navigation -->
+									<div class="show-small">
+										<a href="#" data-toggle="menu-widget" data-target="#demo-wg-server">
+											<i class="fa fa-desktop"></i>
+										</a>
+									</div>
+
+								</div>
+								<!--================================-->
+								<!--End widget-->
+
+							</div>
+						</div>
+					</div>
+					<!--================================-->
+					<!--End menu-->
+
+				</div>
+			</nav>
+			<!--===================================================-->
+			<!--END MAIN NAVIGATION-->
+        {% block aside-bar %}
+
+
+        {% include 'user_audit_js.html' %}
+        {% include 'user_audit_modal.html' %}
+        {% endblock   %}
+			<!--ASIDE-->
+			<!--===================================================-->
+			<aside id="aside-container">
+				<div id="aside">
+					<div class="nano">
+						<div class="nano-content">
+
+							<!--Nav tabs-->
+							<!--================================-->
+							<ul class="nav nav-tabs nav-justified">
+								<li class="active">
+									<a href="#demo-asd-tab-1" data-toggle="tab">
+										<i class="fa fa-comments"></i>
+										<span class="badge badge-purple">7</span>
+									</a>
+								</li>
+								<li>
+									<a href="#demo-asd-tab-2" data-toggle="tab">
+										<i class="fa fa-info-circle"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#demo-asd-tab-3" data-toggle="tab">
+										<i class="fa fa-wrench"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#demo-asd-tab-4" data-toggle="tab">
+										<i class="fa fa-shield"></i>
+										<span class="label label-success">New</span>
+									</a>
+								</li>
+							</ul>
+							<!--================================-->
+							<!--End nav tabs-->
+
+
+
+							<!-- Tabs Content -->
+							<!--================================-->
+							<div class="tab-content">
+
+								<!--First tab-->
+								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+								<div class="tab-pane fade in active" id="demo-asd-tab-1">
+									<h4 class="pad-hor text-thin">
+										First tab
+									</h4>
+									<div class="pad-all">
+
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+									sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+									Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+									ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+									velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+									et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+									</div>
+
+								</div>
+								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+								<!--End first tab-->
+
+
+								<!--Second tab-->
+								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+								<div class="tab-pane fade" id="demo-asd-tab-2">
+									<h4 class="pad-hor text-thin">
+										Second tab
+									</h4>
+									<div class="pad-all">
+
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+									sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+									Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+									ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+									velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+									et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+									</div>
+								</div>
+								<!--End second tab-->
+								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+								<!--Third tab-->
+								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+								<div class="tab-pane fade" id="demo-asd-tab-3">
+									<h4 class="pad-hor text-thin">
+										Third tab
+									</h4>
+									<div class="pad-all">
+
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+									sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+									Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+									ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+									velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+									et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+									</div>
+
+								</div>
+								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+								<!--Third tab-->
+
+								<!--Fourth tab-->
+								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+								<div class="tab-pane fade" id="demo-asd-tab-4">
+									<h4 class="pad-hor text-thin">
+										Fourth tab
+									</h4>
+									<div class="pad-all">
+
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+									sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+									Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+									ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+									velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+									et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+									</div>
+
+								</div>
+								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+								<!--Third tab (Settings)-->
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!--===================================================-->
+			<!--END ASIDE-->
+
+		</div>
+
+
+
+        <!-- FOOTER -->
+        <!--===================================================-->
+        <footer id="footer">
+
+            <!-- Visible when footer positions are fixed -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="show-fixed pull-right">
+                <ul class="footer-list list-inline">
+                    <li>
+                        <p class="text-sm">SEO Proggres</p>
+                        <div class="progress progress-sm progress-light-base">
+                            <div style="width: 80%" class="progress-bar progress-bar-danger"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p class="text-sm">Online Tutorial</p>
+                        <div class="progress progress-sm progress-light-base">
+                            <div style="width: 80%" class="progress-bar progress-bar-primary"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn btn-sm btn-dark btn-active-success">Checkout</button>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <!-- Visible when footer positions are static -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="hide-fixed pull-right pad-rgt">Currently v2.2.2</div>
+
+
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Remove the class name "show-fixed" and "hide-fixed" to make the content always appears. -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <p class="pad-lft">&#0169; 20180824</p>
+
+
+
+        </footer>
+        <!--===================================================-->
+        <!-- END FOOTER -->
+
+
+        <!-- SCROLL TOP BUTTON -->
+        <!--===================================================-->
+        <button id="scroll-top" class="btn"><i class="fa fa-chevron-up"></i></button>
+        <!--===================================================-->
+
+
+
+	</div>
+	<!--===================================================-->
+	<!-- END OF CONTAINER -->
+
+<!--Large Bootstrap Modal-->
+<!--===================================================-->
+<div id="large-modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" >
+            <div class="modal-header" style="opacity:1">
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title" id="myLargeModalLabel">当天登录用户</h4>
+
+            </div>
+            <div class="modal-body" >
+                <div id="large-modal-content" style=""/>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+<!--===================================================-->
+<!--End Large Bootstrap Modal-->
+{% endblock %}
+{% block bottom-js %}
+    <script type="text/javascript">
+
+
+       //for chart
+    $(function () {
+        Highcharts.setOptions({
+            global: {
+                timezoneOffset:new Date().getTimezoneOffset()/60
+
+            }
+        });
+
+        $.getJSON("{% url 'home_summary' %}", function (data) {
+            // Create the chart
+            console.log(data);
+            $('#chart-container').highcharts('StockChart', {
+                credits: {
+                  enabled: false
+                },
+                exporting: { enabled: false },
+                rangeSelector : {
+                    selected : 1
+                },
+
+
+                plotOptions: {
+                    series: {
+                        cursor: 'pointer',
+                        point: {
+                            events: {
+                                click: function () {
+                                    //alert('Category: ' + this.x + ', value: ' + this.y);
+                                    $.getJSON("{% url 'user_login_counts' %}", {time_stamp: this.x},function(callback){
+                                        console.log(callback);
+                                        ShowCurrentDayRecords(callback);
+
+                                    });//end getJSON
+                                }
+                            }
+                        }
+                    }
+                } ,
+
+                series : [{
+                    type:'column',
+                    name : '用户数',
+                    data : data.user_login_statistics,
+                    tooltip: {
+                        valueDecimals: 0
+                    }
+                }]
+            });//end chart
+
+            recent_active_users(data);
+            summary_data(data);
+
+        });
+    });
+        //end chart
+
+    function ShowOnlineHosts(){
+
+
+         $.getJSON("{% url 'dashboard_detail' %}", {'data_type':'get_online_hosts'},function(callback){
+
+            console.log(callback);
+            var table_html = "<table class='table table-hover' > <tr><th>#</th><th>主机名</th><th>IP</th><th>远程用户</th><th>操作用户</th><th>登录时间</th><th></th></tr>";
+
+            $.each(callback, function(index,item){
+                var row = "<tr><td>" + index +
+                        "</td><td data-label='hostname'><a class='btn-link' href='/auditlog/?host_id=" + item.bind_host__host__id + "' >" + item.bind_host__host__name +
+                        "</a></td><td data-label='ip_addr' >" + item.bind_host__host__ip_addr +
+                        "</td><td data-label='username' >" + item.bind_host__remote_user__username +
+                        "</td><td>" + item.user__name +
+                        "</td><td>" + item.date +
+                        "</td><td><a href='#' class='badge badge-success' onclick='ShowRecordDetail(this," + item.id + ")'>查看详细</a></td></tr>";
+                table_html += row;
+
+            });
+            $("#large-modal-content").html(table_html);
+
+         });//end getJSON
+
+        $("#myLargeModalLabel").html("当前正在连接的主机");
+        $("#large-modal").modal("show");
+
+    }
+
+    function ShowOnlineUsers(){
+
+        $.getJSON("{% url 'dashboard_detail' %}", {'data_type':'get_online_users'},function(callback){
+
+            console.log(callback);
+            var table_html = "<table class='table table-hover'><tr><th>#</th><th>在线用户</th><th>部门</th><th>登录时间</th></tr>";
+            $.each(callback,function(index,item){
+                var row = "<tr><td>" + index +
+                            "</td><td><a class='btn-link' href='/user_audit/?user_id=" + item.id +"' >"+ item.name +
+                            "</a></td><td>" + item.department__name +
+                            "</td><td>" + item.last_login +"</td></tr>";
+                table_html += row;
+
+            });//end each
+
+            $("#large-modal-content").html(table_html);
+        });//end getJSON
+
+        $("#myLargeModalLabel").html("当前在线用户");
+        $("#large-modal").modal("show");
+    }
+
+
+    function ShowCurrentDayRecords(data){
+
+        $("#large-modal").modal("show");
+        var html_ele = "<table class='table table-hover'><tr><th>#</th><th>登录日期</th><th>操作人</th><th>主机名</th><th>远程用户</th><th></th></tr>";
+        $.each(data,function(index,item){
+            console.log(item);
+            var row = "<tr><td>" + index +
+                      "</td><td data-label='login_date'>" + item.date +
+                      "</td><td data-label='username'><a class='btn-link' href='/user_audit/" + item.user + "/'>" + item.user__name +
+                      "</a></td><td data-label='hostname'>" + item.bind_host__host__hostname +
+                      "</td><td>" + item.bind_host__host_user__username +
+                      "</td><td> <a onclick='ShowRecordDetail(this," + item.session + ")' class='badge badge-success'>查看详细</a> </td>" +
+                      "</td></tr>";
+            html_ele += row;
+
+
+        });//end each
+        html_ele += "</table>";
+
+        $("#large-modal-content").html(html_ele);
+
+    }
+
+    function recent_active_users(data){
+        var html_ele = '';
+        $.each(data.recent_active_users,function(key,val){
+           var item_ele = "<tr><td><a class='btn-link' href='/user_audit/" + val.user +"/' >" +val.user__name + "</a><td>" + val.id__count +"</td><td>" + val.cmd_count__sum +"</td><tr>";
+           html_ele += item_ele;
+        });
+        $("#recent_active_users").html(html_ele);
+    }
+
+    function active_user_cmd_count(data,user_id){//deprecated
+        var cmd_count;
+        $.each(data.recent_active_users_cmd_count,function(key,val){
+            if (val.user == user_id){
+                cmd_count= val.cmd__count;
+            }
+        });//end each
+        return cmd_count
+    }
+
+    function summary_data(data){
+        $("#total_servers").html(data.summary.total_servers);
+        $("#total_users").html(data.summary.total_users);
+        $("#current_logging_users").html(data.summary.current_logging_users);
+        $("#current_connected_hosts").html(data.summary.current_connected_hosts);
+    }
+
+
+    </script>
+{% endblock %}
+
