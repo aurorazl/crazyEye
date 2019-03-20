@@ -46,7 +46,6 @@ $(document).ready(function() {
 
 		$imgHolder.addClass('disabled');
 		var url = $el.attr('src').replace('thumbs/','');
-
 		$('<imgs/>').attr('src' , url).load(function(){
 			$target.css('background-image', 'url("' + url + '")');
 			$imgHolder.removeClass('disabled');
